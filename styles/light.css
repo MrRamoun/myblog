@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+.datetime-margin {
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    font-family: Helvetica;
+}
+
+.thin-hr {
+    width: inherit;
+    height: .1px;
+    background-color: rgb(29, 29, 29);
+    opacity: 0.1;
+}
+
+.thick-hr {
+    width: inherit;
+    height: 2px;
+    background-color: rgb(29, 29, 29);
+}
+
+nav {
+    margin-top: 0px;
+}
+
+.menu-box {
+    width: 100px;
+    height: 90px;
+    padding: 20px;
+    float: right;
+    font-family: Helvetica;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.menu-box:nth-child(odd) {
+    border-left: rgba(195, 195, 195, 0.39) solid 1px;
+    border-right: rgba(195, 195, 195, 0.39) solid 1px;
+}
+
+.menu-box h3 {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: rgb(64, 143, 233);    
+}
+
+.menu-box p {
+    /* text-align: start; */
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.menu-box:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(170, 170, 170, 0.219), transparent);
+}
+
+.menu-box:hover h3 {
+    text-decoration: underline;
+}
+
+.menu-box:active h3 {
+    color: black;
+}
+
+#email {
+    text-align: right;
+    width: 180px;
+    visibility: hidden;
+}
+
+#email:hover {
+    background: none;
+    cursor: default;
+}
+
+#email:active h3 {
+    color: rgb(64, 143, 233);
+}
+
+#email h3 {
+    text-decoration: underline;
+}
+
+#email a {
+    font-weight: 600;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+#email a:hover {
+    color: rgb(64, 143, 233);
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 240px;
+}
+
+header h4 {
+    font-size: 16px;
+    width: 238px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(64, 143, 233);
+    color: white;
+    padding-left: 2px;
+}
+
+header {
+    padding-top: 2px;
+    margin-bottom: 20px;
+}
+
+.sticky {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* box-shadow: 0px 2px 2px rgba(29, 29, 29, 0.575); */
+}
+
+#stick {
+    z-index: 2;
+    height: 2px;
+}
+
+article {
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    width: 900px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+article h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+article h4 {
+    color: white;
+    background-color: rgb(64, 143, 233);
+    margin-right: 770px;
+    font-size: 20px;
+    padding-left: 10px;
+    height: 30px;
+    padding-top: 30px;
+}
+
+article .sub-head {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: helvetica;
+}
+
+article img {
+    width: 620px;
+    float: right;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+}
+
+article p {
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#stack-list {
+    font-family: helvetica;
+    border: solid rgba(29, 29, 29, 0.5) 2px;
+    margin-top: -200px;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    overflow: scroll;
+}
+
+#stack-list #head {
+    color: darkkhaki;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#stack-list #list-main li {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: darkcyan;
+}
+
+#stack-list #list-submain li {
+    color: darkorange;
+    margin-top: 10px;
+}
+
+#stack-list #list-sub-submain li {
+    color: darkturquoise;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;    
+}
+
+.sub-head {
+    text-align: justify;
+}
+
+.sub-head::after {
+    display: block;
+    width: 20px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    margin-top: 30px;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px -3px 0px rgba(29, 29, 29, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+button {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;    
+    outline: 0px;
+}
+
+/* blinking cursor */
+.blinking-cursor {
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
